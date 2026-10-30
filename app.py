@@ -167,8 +167,6 @@ def source_html(s):
         return f'<a href="http{html.escape(url)}" target="_blank" rel="noopener">{html.escape(title)}</a>'
     return html.escape(s)
 
-import math
-
 TOWNS = {"swannanoa": (35.60, -82.40), "asheville": (35.60, -82.56),
          "black mountain": (35.62, -82.32), "chimney rock": (35.44, -82.25),
          "lake lure": (35.42, -82.20), "marshall": (35.80, -82.68),
@@ -383,7 +381,7 @@ HOW_HTML = ('<div style="display:flex; gap:6px; flex-wrap:wrap; margin:6px 0">'
             + step(1, "SKR Rater", "DistilBERT scores every message, fast")
             + ARROW + step(2, "NVIDIA Nemotron", "on Nebius Token Factory: second opinion, facts, draft reply")
             + ARROW + step(3, "Tavily", "finds a related official report")
-            + ARROW + step(4, "Ranked cards", "models disagree? a human reviews")
+            + ARROW + step(4, "Ranked cards", "a human reads all; disputes are flagged")
             + '</div>')
 STORY_HTML = """
 <div style="background:#111827; border-radius:12px; padding:22px 24px">
